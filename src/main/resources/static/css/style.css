@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+
+header {
+    background-color: #b30000;
+    padding: 25px;
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0 0 15px 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+
+.intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+.intro h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+.intro input {
+    width: 60%;
+    max-width: 600px;
+    padding: 12px;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+
+.filter-buttons {
+    margin: 10px 0 20px 0;
+}
+
+
+.filter-buttons button {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.character-card {
+    background-color: #1f1f1f;
+    border: 2px solid #333;
+    padding: 18px;
+    text-align: center;
+}
+
+
+.character-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+
+.character-card h3 {
+    color: #ff3b3b;
+    font-size: 22px;
+}
+
+
+.character-card p {
+    line-height: 1.5;
+}
+
+
+.role {
+    display: inline-block;
+    background-color: #333;
+    padding: 7px 12px;
+    font-weight: bold;
+}
+
+
+.character-card a {
+    display: inline-block;
+    background-color: #b30000;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.character-card a:hover {
+    background-color: #e00000;
+}
+
+
+.back-link {
+    display: inline-block;
+    color: white;
+    background-color: #b30000;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.details-card {
+    background-color: #1f1f1f;
+    border: 2px solid #333;
+    padding: 25px;
+    text-align: center;
+}
+
+
+.details-image {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    object-fit: contain;
+}
+
+
+.details-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+
+.details-content h2 {
+    color: #ff3b3b;
+    font-size: 32px;
+}
+
+
+.details-content h3 {
+    color: #ff3b3b;
+    margin-top: 30px;
+}
+
+
+.details-content p {
+    line-height: 1.7;
+}
+
+
+.section-label {
+    font-weight: bold;
+    color: #ff3b3b;
+}
+
+
+.character-summary {
+    font-size: 18px;
+}
+
+
+.quick-info {
+    background-color: #292929;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+
+.about-section {
+    background-color: #1f1f1f;
+    border: 2px solid #333;
+    padding: 25px;
+    text-align: center;
+}
+
+
+.about-section p {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+
+
+.about-section h2,
+.about-section h3 {
+    color: #ff3b3b;
+}
+
+
+.about-image {
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    object-fit: contain;
+}
+
+
+.form-section {
+    max-width: 700px;
+    margin: auto;
+    background-color: #1f1f1f;
+    border: 2px solid #333;
+    padding: 30px;
+}
+
+
+.form-section h2 {
+    color: #ff3b3b;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+form input,
+form textarea {
+    padding: 12px;
+    font-size: 16px;
+}
+
+
+form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #b30000;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 800px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .intro input {
+        width: 90%;
+    }
+
+}

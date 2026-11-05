@@ -25,6 +25,8 @@ public class MarvelCharacter {
 
     private String role;
 
+    private String imageUrl;
+
     public MarvelCharacter() {
     }
 
@@ -73,5 +75,13 @@ public class MarvelCharacter {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }
